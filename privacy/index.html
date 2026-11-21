@@ -22,11 +22,11 @@
   </header>
 
   <main class="document">
-    <p class="eyebrow">EFFECTIVE SEPTEMBER 6, 2026</p>
+    <p class="eyebrow">UPDATED NOVEMBER 20, 2026</p>
     <h1>Privacy Policy</h1>
     <p class="lede">PicDraw is designed as a private, offline-first utility. The app does not require an account and does not send your photos or drawings to PicDraw servers.</p>
 
-    <div class="notice"><strong>Short version:</strong> your selected photos, drawings, projects, and camera feed stay on your device. PicDraw has no ads, accounts, or cross-app tracking. Limited app-usage analytics are sent to Google Firebase to improve the product; they never include your photos, drawings, camera frames, or recordings.</div>
+    <div class="notice"><strong>Short version:</strong> your selected photos, drawings, projects, and camera feed stay on your device. PicDraw does not require an account. Starting with version 1.1, free use is supported by Google AdMob ads; a monthly subscription or an existing or new lifetime purchase removes ads. Limited usage analytics and advertising information are processed by Google as explained below. Your creative content is never included.</div>
 
     <section>
       <h2>1. Scope</h2>
@@ -45,14 +45,19 @@
       <p>If you choose Record, PicDraw creates a camera video on the device and saves it to Photos on iOS or Movies/PicDraw on Android. PicDraw does not upload the recording.</p>
 
       <h3>Purchases</h3>
-      <p>The optional lifetime unlock is processed by Apple through StoreKit or by Google through Google Play Billing. PicDraw reads the purchase entitlement needed to unlock features. The developer does not receive your store-account credentials or payment-card details.</p>
+      <p>Optional monthly ad-free subscriptions and lifetime purchases are processed by Apple through StoreKit or by Google through Google Play Billing. PicDraw checks the current purchase entitlement to remove advertising. Existing lifetime purchases remain ad-free. The developer does not receive your store-account credentials or payment-card details.</p>
 
       <h3>Local settings</h3>
       <p>PicDraw stores small preference and access-state values on your device, such as whether onboarding was completed, which free tracing projects were started, and saved project settings. These values are not sent to the developer.</p>
 
       <h3>App analytics</h3>
       <p>PicDraw uses Google Firebase Analytics to understand how the app is used and where the experience can be improved. Analytics events can include screen visits, onboarding completion, use of tracing, coloring and puzzle tools, saves, resumes, exports, paywall interactions, and purchase outcomes. They do not include the contents of your photos, drawings, projects, camera feed, or recordings.</p>
-      <p>Firebase automatically assigns an app-instance identifier and may process app, device and operating-system details, general location derived from a masked IP address, and StoreKit or Google Play purchase-event information such as product identifier and price. PicDraw does not set a user ID, collect an advertising identifier, or link analytics to an account or your real-world identity. Advertising storage, advertising user data, and ad-personalization signals are disabled.</p>
+      <p>Firebase automatically assigns an app-instance identifier and may process app, device and operating-system details, general location derived from an IP address, and StoreKit or Google Play purchase-event information such as product identifier and price. PicDraw does not set an account user ID or send names or email addresses in analytics events. Firebase advertising storage, advertising user-data consent, and ad-personalization signals are disabled by the app. Advertising-related SDK processing is described separately below.</p>
+
+      <h3>Advertising in version 1.1 and later</h3>
+      <p>Before enabling ads or app-usage analytics, PicDraw asks for an age range. The choice is stored only on your device and is not sent as an analytics event. No birth date is requested. Advertising and Firebase Analytics collection remain disabled until you select 18 or older; they stay disabled for users who select Under 18. You can revisit the choice under Privacy settings on the home screen.</p>
+      <p>The free version uses Google AdMob to show small banners and occasional full-screen ads at natural breaks. Google may process IP addresses, approximate location, device or app identifiers, device and operating-system details, ad impressions and interactions, diagnostics, and performance information to deliver ads, prevent fraud, limit repetition, and report revenue. Non-personalized ads can still use device storage and identifiers for these purposes. PicDraw requests non-personalized ads, disables publisher personalization, and limits requested ad content to Google's general-audience (G) rating. No photo, artwork, project content, camera frame, or recording is sent with an ad request.</p>
+      <p>Where required, Google's User Messaging Platform asks for privacy choices before ads can be requested. The <strong>Ad privacy choices</strong> control on the home screen lets you revisit the message when Google requires a privacy-options entry point. Ad serving depends on valid consent or other applicable permissions; an unavailable ad never blocks a creative action. PicDraw does not request permission to track activity across other companies' apps and websites on iOS.</p>
 
       <h3>On-device subject isolation on Android</h3>
       <p>The optional Subject Only tool uses Google ML Kit through Google Play services. Google Play services may download the segmentation model, but the selected image is processed on your device and is not sent to PicDraw servers.</p>
@@ -62,7 +67,7 @@
       <h2>3. Data PicDraw does not collect</h2>
       <ul>
         <li>No account, name, email address, or contact list</li>
-        <li>No advertising identifier, cross-app tracking, or behavioral advertising</li>
+        <li>No photos, artwork, camera frames, or recordings sent to advertising services</li>
         <li>No account-based or personally identified analytics profile</li>
         <li>No precise location</li>
         <li>No cloud copy of your photos, outlines, camera feed, or recordings</li>
@@ -71,7 +76,7 @@
 
     <section>
       <h2>4. Sharing and third parties</h2>
-      <p>PicDraw does not sell or share app data with advertisers or data brokers. Google processes the limited analytics information described above as the provider of Firebase Analytics. Apple and Google also provide system features including store billing, media access, camera permissions, and on Android the optional ML Kit model, under their own terms and privacy practices. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noreferrer">Privacy and Security in Firebase</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Privacy Policy</a>.</p>
+      <p>Google processes the analytics and advertising information described above through Firebase Analytics, AdMob, and the User Messaging Platform. Ad delivery may involve Google's advertising partners according to the privacy choices presented to you. Apple and Google also provide store billing, media access, camera permissions, and on Android the optional ML Kit model, under their own terms and privacy practices. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noreferrer">Privacy and Security in Firebase</a>, <a href="https://developers.google.com/admob/ios/privacy/data-disclosure" target="_blank" rel="noreferrer">Google Mobile Ads data disclosure</a>, and the <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Privacy Policy</a>.</p>
       <p>This support site is hosted by GitHub Pages. When you visit it, GitHub may process standard web connection information under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noreferrer">GitHub Privacy Statement</a>. If you voluntarily open a public GitHub issue, the content you submit is processed and displayed by GitHub.</p>
     </section>
 
@@ -79,17 +84,19 @@
       <h2>5. Retention and deletion</h2>
       <p>PicDraw does not maintain a developer database of your photos, drawings, projects, or camera content. Imported images, saved projects, and generated outlines remain on the device and are not uploaded. Videos remain in Photos or Movies until you delete them. Local app data can be removed by deleting the app. Purchase history is maintained by Apple or Google and can be managed through the account used for the purchase.</p>
       <p>Firebase Analytics retains app-usage events according to the retention settings of the PicDraw Firebase project and provides aggregated reports to the developer. Deleting the app removes its local app-instance identifier and a later reinstall receives a new identifier, but previously collected analytics may remain in aggregated or retained reports.</p>
+      <p>Google retains advertising and consent information according to its applicable retention and privacy policies. Removing ads prevents new advertising requests from PicDraw while the entitlement is active; it does not automatically erase information previously processed by Google.</p>
       <p>Support requests posted on GitHub can be edited or deleted through your GitHub account. You may also ask for help through the <a href="https://github.com/dpolokhalo-gif/picdraw-support/issues/new" target="_blank" rel="noreferrer">support request page</a>.</p>
     </section>
 
     <section>
       <h2>6. Your choices</h2>
       <p>You can revoke Camera or media permission at any time in your iOS or Android device settings. PicDraw will continue to work where possible, but features that require the revoked permission will be unavailable. You can also contact PicDraw Support with questions about analytics or privacy.</p>
+      <p>You can revisit available ad privacy choices from the home screen, manage your device's advertising privacy settings, or choose an ad-free purchase. Monthly subscriptions can be canceled through the store account used to subscribe. Contact support privately for privacy requests; do not post personal or payment information in a public GitHub issue.</p>
     </section>
 
     <section>
       <h2>7. Children’s privacy</h2>
-      <p>PicDraw does not knowingly collect personal information from children or any other users. The app does not contain social features, targeted advertising, or cross-app behavioral tracking. The limited, non-account analytics described above apply to app use.</p>
+      <p>PicDraw is a general creative utility and does not provide accounts or social features. A G ad-content rating does not establish a user's age. If you believe a child's information has been processed inappropriately, contact support so the issue can be investigated. Parents and guardians should supervise children's device use and purchases.</p>
     </section>
 
     <section>
@@ -99,7 +106,7 @@
 
     <section>
       <h2>9. Contact</h2>
-      <p>Questions about privacy can be submitted through <a href="https://github.com/dpolokhalo-gif/picdraw-support/issues/new" target="_blank" rel="noreferrer">PicDraw Support on GitHub</a>.</p>
+      <p>For private privacy requests, email <a href="mailto:dpolokhalo@gmail.com">dpolokhalo@gmail.com</a>. General non-sensitive questions can also be submitted through <a href="https://github.com/dpolokhalo-gif/picdraw-support/issues/new" target="_blank" rel="noreferrer">PicDraw Support on GitHub</a>.</p>
     </section>
   </main>
 
